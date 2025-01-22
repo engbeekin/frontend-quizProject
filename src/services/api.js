@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://quiz-app-api-094828e66084.herokuapp.com/api", // change you local host url
-  
+  baseURL: "https://quiz-app-api-094828e66084.herokuapp.com/api", // change to your local host url
 });
 
 api.interceptors.request.use(

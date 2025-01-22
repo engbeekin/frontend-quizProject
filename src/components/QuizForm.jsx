@@ -134,7 +134,7 @@ const QuizForm = () => {
             </div>
             {showNext && feedback === "correct" && (
               <p className="text-green-600 font-medium mt-2">
-                Correct! The answer is {selectedAnswer}.
+                Correct.
               </p>
             )}
             {showNext && feedback === "wrong" && (
