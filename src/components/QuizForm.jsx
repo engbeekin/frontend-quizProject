@@ -41,6 +41,8 @@ const QuizForm = () => {
         answer: selectedAnswer,
         quizId: quizId,
       });
+      console.log('response: ',response);
+      
 
       const { result } = response.data;
       setData(result);
@@ -86,7 +88,7 @@ const QuizForm = () => {
           icon: "success",
           confirmButtonText: "OK",
         }).then(() => {
-          navigate("/");
+          navigate("/dashboard");
         });
       }
     });
