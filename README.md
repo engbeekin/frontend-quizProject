@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Quiz Project is a web-based application that presents users with multiple-choice questions related
+to capital cities around the world. Users can select answers, submit their responses,
+and receive immediate feedback on their performance.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Multiple-choice questions on capital cities around the world topics.
+- Each question offers Three possible answers.
+- Immediate feedback on whether the selected answer is correct or incorrect.
+- Final score display upon quiz completion.
+- Responsive design.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Try it here: [capital cities Quiz](https://frontend-quiz-project-one.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Test Users
 
-### `npm test`
+You can use the following test users to log in and use the project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User 1
+ ``` bash
+    email: user1@user.com
+    password: 12345678
+```
+- User 2
+ ``` bash
+    email: user2@user.com
+    password: 12345678
+```
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### BackEnd
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Laravel Framework
+- PHP
+- PostgreSQL
+- Click here: [BackEnd GitHub Repo Link](https://github.com/engbeekin/backend-quizProject/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### FrontEnd
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- React
+- HTML
+- Tailwind CSS
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Deployed the BackEnd API on Heroku
+- Deployed the FrontEnd on Vercel
 
-### `npm run build` fails to minify
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/engbeekin/frontend-quizProject.git
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Start the application:
+   ```bash
+   npm start
+
+### Note
+
+- If you using the Local API, please don't forget to update the base url in
+```bash
+- services/api.js
+
+const api = axios.create({
+  baseURL: "https://quiz-app-api-094828e66084.herokuapp.com/api", // change to your local host URL here 
+});
+```
+
+
