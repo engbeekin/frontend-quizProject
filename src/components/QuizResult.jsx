@@ -20,6 +20,7 @@ const QuizResult = () => {
     fetchData();
   }, []);
 
+
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -43,10 +44,12 @@ const QuizResult = () => {
           Dashboard
         </h1>
         {data.map((user) => (
+          
           <div
             key={user.id}
             className="mb-8 bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
           >
+          
             <h2 className="text-2xl font-bold text-gray-700 mb-4">
               Your Quizzes Result
             </h2>
@@ -79,7 +82,7 @@ const QuizResult = () => {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {user.quizzes.quiz_info.map((quiz, index) => {
-                  const result = user.quizzes.quizUserResult[quiz.id];
+                  const result = user.quizzes.quizUserResult[quiz.id] || {};
                   return (
                     <div
                       key={quiz.id}
